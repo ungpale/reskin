@@ -1,0 +1,35 @@
+@charset "utf-8";
+/*
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+*/
+@font-face {
+	font-family:'Nanum Gothic'; font-style:normal; font-weight:400;
+	src:url('../fonts/NanumGothic-Regular.eot');
+	src:local('NanumGothic'),
+		url('../fonts/NanumGothic-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NanumGothic-Regular.woff') format('woff');
+}
+@font-face {
+	font-family:'Nanum Gothic'; font-style:normal; font-weight:700;
+	src:url('../fonts/NanumGothic-Bold.eot');
+	src:local('NanumGothic Bold'),
+		url('../fonts/NanumGothic-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NanumGothic-Bold.woff') format('woff');
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td {font-size:100%; font-family:inherit; margin:0; padding:0; border:0; vertical-align:baseline; word-break:break-all;}
+body {line-height:1; color:black; background:white;}
+ol, ul {list-style:none;}
+table {border-collapse:separate; border-spacing:0;}
+caption, th, td {text-align:left; font-weight:normal;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';}
+blockquote, q {quotes:'' '';}
+button,
+input {overflow:visible;}
+input, select, img {vertical-align:middle;}
+textarea {overflow:auto; vertical-align:top;}
+em {font-style:normal;}
