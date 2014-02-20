@@ -16,38 +16,31 @@
 }*/
 
 /*basic*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
-font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td {font-size:100%; font-family:inherit; margin:0; padding:0; border:0; vertical-align:baseline; word-break:break-all;}
-body {line-height:1; color:black; background:white;}
-ol, ul, dl, li {list-style:none;}
-table {border-collapse:separate; border-spacing:0;}
-caption, th, td {text-align:left; font-weight:normal;}
-blockquote:before, blockquote:after, q:before, q:after {content:'';}
-blockquote, q {quotes:'' '';}
-button,
-input {overflow:visible;}
-input, select, img {vertical-align:middle;}
-textarea {overflow:auto;vertical-align:top;}
-em {font-style:normal;}
-
-/*
- * html5
- * abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup main mark meter nav output progress section summary time video
- */
-figure,section,header,footer,article,aside,nav {display:block; margin:0 auto;}
-
-html,body {height:100%;}
-html {overflow-y:scroll;}
-body,input,textarea,button,table {font-size:12px; line-height:1.2; color:#666; font-family:'Nanum Gothic', '맑은 고딕', '돋움', Dotum, sans-serif, Tahoma;}
-legend {font:0/0 a; position:absolute; right:-999em; top:-999em;}
-
-input,button,select,select option,textarea {margin:0; box-sizing:border-box; -moz-box-sizing:border-box;}
-
-a {color:inherit; text-decoration:none;}
-a:hover, a:active, a:focus {text-decoration:underline;}
+html, button, input, select, textarea {color:#666;font-size:12px;font-family:'Nanum Gothic', '맑은 고딕', '돋움', Dotum, sans-serif, Tahoma;}
+body {font-size:12px;font-family:'Nanum Gothic', '맑은 고딕', '돋움', Dotum, sans-serif, Tahoma;color:#666;letter-spacing: -1px;}
+::-moz-selection {background:#aaa;text-shadow:none;}
+::selection {background:#aaa;text-shadow:none;}
+hr {display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}
+img {vertical-align:middle;border:none;}
+fieldset {border: 0; margin: 0; padding: 0; }
+textarea {resize: vertical; }
+.chromeframe {margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0; }
+a {color:#494949;text-decoration: none}
+a:visited {color:#494949;text-decoration: none}
+a:hover {color:#494949;text-decoration: none}
+select {font-family:'Nanum Gothic', '맑은 고딕', '돋움', Dotum, sans-serif, Tahoma;font-size:12px;vertical-align:middle;}
+dd{margin:0;}
+label,input{vertical-align:middle;}
+ul,ol,li{list-style:none;padding:0;margin:0;}
+.clear{clear:both;content:"";display:block;padding:0;margin:0;width:0;height:0;line-height:0;font-size:0;}
+h3{margin-bottom:30px;}
+h4{margin-bottom:30px;}
+h5{margin-bottom:20px;}
+h6{margin-bottom:20px;font-family:'Nanum Gothic', '맑은 고딕', '돋움', Dotum, sans-serif, Tahoma;font-size:20px;font-weight:bold;}
+h7{margin-bottom:20px;font-family:'Nanum Gothic', '맑은 고딕', '돋움', Dotum, sans-serif, Tahoma;font-size:28px;font-weight:bold;}
+p{line-height:22px;}
+h4 + p{margin-bottom:20px;}
+h5 + p{margin-bottom:20px;}
 
 table {border-collapse:collapse;border:0;border-spacing:0;empty-cells:show;width:100%;}
 td,th {border:0;}

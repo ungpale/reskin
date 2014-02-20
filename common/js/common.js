@@ -1,7 +1,7 @@
 (function($) {
 $(document).ready(function() {
 	// 메뉴전체보기
-	$('#nav-all .btn').click(function(){
+	$('.nav-all .btn').click(function(){
 		$('.list-wrap').toggle();
 	});
 

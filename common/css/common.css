@@ -3,7 +3,7 @@
 /*layout*/
 #wrapper {position:relative;width:100%;}
 #header {position:absolute;left:0;top:0;width:100%;height:118px;z-index:100;background:url('http://reskin.img13.kr/common/skin1/images/style/hdwrap.png') repeat-x 0 0;}
-#content {position:relative;}
+#content, #footer {position:relative;}
 .wrap {position:relative;width:1000px;margin:0 auto;}
 .wrap:after {display:block;content:'';clear:both;*zoom:1;}
 
@@ -13,31 +13,34 @@
 #skipnavigation a:focus, .accessibility a:active {width:100%;height:auto;padding:5px 0;background-color:#CE292C}
 
 /*header*/
-#nav-all {display:inline-block;}
-#nav-all .btn {cursor:pointer;}
-#nav-all a:hover {text-decoration:none;}
-#nav-all .list-wrap {position:absolute;top:35px;left:0;width:1000px;background:url('http://reskin.img13.kr/common/skin1/images/style/nav-all-bg.png') repeat-y 0 0;z-index:10;}
-#nav-all .depth1 > li {float:left;width:199px;min-height:388px;border-top:1px solid #363636;border-left:1px solid #363636;}
-#nav-all .depth1 > li > a {display:block;padding:17px 28px;color:#cecece;border-bottom:1px solid #363636;background:url('http://reskin.img13.kr/common/skin1/images/style/nav-all-arrow.png') no-repeat right center;}
-#nav-all .depth1 > li > a:hover {color:#fff;}
-#nav-all .depth1 > li > a span {font-size:16px;}
-#nav-all .depth1 > li.fist {width:200px; border-left:0;}
-#nav-all .depth2 {padding:9px 0 45px 28px;}
-#nav-all .depth2 li {line-height:20px;}
-#nav-all .depth2 li.first {border-left:0;}
-#nav-all .depth2 li a:hover {color:#d5ba93;}
-#topmenu {float:right;}
-#topmenu ul li {float:left;padding-left:17px;}
-#topmenu ul li:first-child {padding-left:0;}
-#header .wrap h1 {float:left;}
-#header #gnb,
-#header #gnb ul li,
-#header #review-event,
-#header #review-event ul li {float:left;}
-#header #gnb ul li span,
-#header #review-event ul li span {display:block;}
-#header #gnb ul li span a,
-#header #review-event ul li a {display:block;height:80px;overflow:hidden;}
+#global {height:35px;}
+#global .nav-all {position:absolute;top:0;left:0;width:200px;z-index:1000;}
+#global .nav-all .btn {cursor:pointer;}
+#global .nav-all a:hover {text-decoration:none;}
+#global .nav-all .list-wrap {position:absolute;top:35px;left:0;width:1000px;background:url('http://reskin.img13.kr/common/skin1/images/style/nav-all-bg.png') repeat-y 0 0;z-index:100;}
+#global .nav-all .depth1 > li {float:left;width:199px;min-height:388px;border-top:1px solid #363636;border-left:1px solid #363636;}
+#global .nav-all .depth1 > li > a {display:block;padding:17px 28px;color:#cecece;border-bottom:1px solid #363636;background:url('http://reskin.img13.kr/common/skin1/images/style/nav-all-arrow.png') no-repeat right center;}
+#global .nav-all .depth1 > li > a:hover {color:#fff;}
+#global .nav-all .depth1 > li > a span {font-size:16px;}
+#global .nav-all .depth1 > li.fist {width:200px; border-left:0;}
+#global .nav-all .depth2 {padding:9px 0 45px 28px;}
+#global .nav-all .depth2 li {line-height:20px;}
+#global .nav-all .depth2 li.first {border-left:0;}
+#global .nav-all .depth2 li a {color:#666;}
+#global .nav-all .depth2 li a:hover {color:#d5ba93;}
+#global .topmenu {float:right;}
+#global .topmenu ul li {float:left;padding-left:17px;}
+#global .topmenu ul li:first-child {padding-left:0;}
+#gnb-area {display:inline-block;height:80px;overflow:hidden;}
+#gnb-area h1 {float:left;}
+#gnb-area #gnb,
+#gnb-area #gnb ul li,
+#gnb-area #review-event,
+#gnb-area #review-event ul li {float:left;}
+#gnb-area #gnb ul li span,
+#gnb-area #review-event ul li span {display:block;}
+#gnb-area #gnb ul li span a,
+#gnb-area #review-event ul li a {display:block;height:80px;overflow:hidden;}
 
 /*content*/
 #content #visual {padding-top:34px;width:100%;height:347px;background-color:#ebebeb;text-align:center;}
@@ -53,6 +56,44 @@
 #content #category-wrap .depth2 {margin-top:10px;}
 #content #category-wrap .depth2 li a {color:#999;line-height:20px;}
 #content #category-wrap ul li a:hover {color:#d5ba96;text-decoration:none;}
+
+/*main*/
+#slider-wrap {position:relative;width:100%;height:620px;overflow:hidden;text-align:center;background-color:#ebebea;}
+.flexslider {position:relative;padding:0;margin:0;height:620px;}
+.flexslider .slides > li {height:620px;display:none;}
+.flex-control-nav {width:110px;position:absolute;top:132px;right:10px;text-align:center;z-index:10;}
+.flex-control-nav li {margin: 0 5px;display:inline-block;zoom:1;*display:inline;}
+.flex-control-nav li a {text-indent:-9999px;}
+.flex-control-paging li a {width:14px;height:14px;display:block;background:#666;background:rgba(0,0,0,0.5);cursor:pointer;text-indent:-9999px;-webkit-border-radius:20px;-moz-border-radius:20px;-o-border-radius:20px;border-radius:20px;box-shadow:inset 0 0 3px rgba(0,0,0,0.3);}
+.flex-control-paging li a:hover {background:#333;background:rgba(0,0,0,0.7);}
+.flex-control-paging li a.flex-active {background:#000;background:rgba(0,0,0,0.9);cursor:default;}
+.main-ban {position:absolute;top:445px;left:0;width:1000px;overflow:hidden;z-index:100;}
+.main-ban ul li {float:left;}
+.main-category ul li {float:left;width:100px;height:130px;overflow:hidden;}
+.main-category ul li a {display:block;}
+.main-event {border-top:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;}
+.main-event h2 {display:none;}
+[class|='event-box'] {position:relative;float:left;min-height:200px;}
+.main-best {position:relative;}
+.main-best h2 {position:absolute;margin:0;left:0;top:0;width:200px;height:300px;overflow:hidden;background:url('http://reskin.img13.kr/common/skin1/images/contents/best-seller.jpg') no-repeat;}
+.main-best ul {padding-left:200px;}
+.main-best ul li {float:left;width:200px;height:300px;overflow:hidden;}
+.main-best ul li a {display:block;height:300px;}
+
+/*footer*/
+#footer {border-top:1px solid #e8e8e8;}
+.footer-ban ul li {float:left;overflow:hidden;}
+.footer-ban ul li a {display:block;height:80px;}
+.footer-sitemap {background-color:#1c1c1c;overflow:hidden;}
+.footer-sitemap > ul > li {float:left;padding:30px 0 30px 30px;width:170px;overflow:hidden;background:url('../image/common/bg_footer_sitemap.gif') repeat-y right center;}
+.footer-sitemap ul li h2 {padding:0;margin:0 0 6px 0;height:11px;overflow:hidden;}
+.footer-sitemap ul li.community h2 {background:url('http://reskin.img13.kr/common/skin1/images/contents/ft-sitemap4.gif') no-repeat;}
+.footer-sitemap ul li.event h2 {background:url('http://reskin.img13.kr/common/skin1/images/contents/ft-sitemap5.gif') no-repeat;}
+.footer-sitemap ul li.about h2 {background:url('http://reskin.img13.kr/common/skin1/images/contents/ft-sitemap6.gif') no-repeat;}
+.footer-sitemap ul li.cs h2 {background:url('http://reskin.img13.kr/common/skin1/images/contents/ft-sitemap7.gif') no-repeat;}
+.footer-sitemap ul li.myreskin h2 {background:url('http://reskin.img13.kr/common/skin1/images/contents/ft-sitemap8.gif') no-repeat;}
+.footer-sitemap ul li ul li {line-height:20px;}
+.footer-sitemap ul li ul li a {color:#616161;font-weight:700;}
 
 /*공통*/
 .bg-none {background:none !important;}
