@@ -6,68 +6,323 @@
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 <meta http-equiv="Content-Style-Type" content="text/css">
 <title>민감성 피부의 대명사 '리스킨'</title>
+<meta name="copyright" content="Copyrights © 2014 reskin.co.kr All Rights Reserved" /> 
+<link rel="stylesheet" href="common/css/normalize.css">
 <link rel="stylesheet" href="common/css/base.css">
 <link rel="stylesheet" href="common/css/common.css">
-<!--[if lt IE 9]>
-<script src="//html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
-<![endif]-->
+<script type="text/javascript" src="common/js/modernizr-2.6.2.min.js"></script>
+<script type="text/javascript" src="common/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="common/js/jquery-ui-1.10.4.custom.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="common/js/common.js"></script>
+<script type="text/javascript" src="common/js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="common/js/jquery.easing.1.3.js"></script>
 </head>
 <body>
 <div id="wrapper">
 	<div id="skipnavigation">
-		<a href="#contents">본문 바로가기</a>
+		<a href="#content">본문 바로가기</a>
 		<a href="#gnb">주메뉴 바로가기</a>
 	</div>
 	<div id="header">
 		<div class="wrap">
-			<div id="nav-all">
-				<img class="btn" src="http://reskin.img13.kr/common/skin1/images/style/gnb-all.gif" alt="전체 메뉴 보기" />
-				<div class="list-wrap">
-					<ul class="depth1 clfix">
-						<li>
-							<a href="#"><span>유형별</span></a>
-							<ul class="clfix">
-								<li><a href="#">스킨케어</a></li>
-								<li><a href="#">스페셜케어</a></li>
-								<li><a href="#">선케어</a></li>
-								<li><a href="#">클렌징</a></li>
-								<li><a href="#">메이크업</a></li>
-								<li><a href="#">바디케어</a></li>
-								<li><a href="#">헤어케어</a></li>
-								<li><a href="#">ETC</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#"><span>라인별</span></a>
-							<ul>
-								<li></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#"><span>피부고민별</span></a>
-							<ul>
-								<li></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#"><span>포맨</span></a>
-							<ul>
-								<li></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#"><span>금액대별</span></a>
-							<ul>
-								<li></li>
-							</ul>
-						</li>
+			<div id="global">
+				<div class="nav-all">
+					<img class="btn" src="http://reskin.img13.kr/common/skin1/images/style/gnb-all.gif" alt="전체 메뉴 보기" />
+					<div class="list-wrap" style="display:none;">
+						<ul class="depth1 clfix">
+							<li class="first">
+								<a href="#"><span>유형별</span></a>
+								<ul class="depth2">
+									<li><a href="#">스킨케어</a></li>
+									<li><a href="#">스페셜케어</a></li>
+									<li><a href="#">선케어</a></li>
+									<li><a href="#">클렌징</a></li>
+									<!-- <li><a href="#">메이크업</a></li>
+									<li><a href="#">바디케어</a></li>
+									<li><a href="#">헤어케어</a></li> -->
+									<li><a href="#">ETC</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#"><span>라인별</span></a>
+								<ul class="depth2">
+									<li><a href="#">이지에프 바머</a></li>
+									<li><a href="#">이지에프 슈퍼 바머</a></li>
+									<li><a href="#">안티링클 스네일</a></li>
+									<li><a href="#">TS 스페셜 케어</a></li>
+									<li><a href="#">브이랩 시스템 세븐</a></li>
+									<li><a href="#">RS 스킨 케어</a></li>
+									<li><a href="#">스템셀 이매직</a></li>
+									<!-- <li><a href="#">더 오리엔탈 레름</a></li> -->
+									<li><a href="#">RS BB &amp; SUN</a></li>
+									<li><a href="#">RS 훼이스 클렌징 &amp; 타올</a></li>
+									<li><a href="#">RS 바디 케어 &amp; 타올</a></li>
+									<!-- <li><a href="#">RS 헤어케어</a></li> -->
+									<!-- <li><a href="#">글램 톡스</a></li> -->
+									<li><a href="#">잡화</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#"><span>피부고민별</span></a>
+								<ul class="depth2">
+									<li><a href="#">번들거리는 트러블 피부</a></li>
+									<li><a href="#">수분 부족형 트러블 피부</a></li>
+									<li><a href="#">민감한 여드름성 피부</a></li>
+									<li><a href="#">생기와 활력이 부족한 피부</a></li>
+									<li><a href="#">영양이 필요한 예민한 피부</a></li>
+									<li><a href="#">노화가 시작된 피부</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#"><span>포맨</span></a>
+								<ul class="depth2">
+									<li><a href="#">클렌징</a></li>
+									<li><a href="#">스킨케어</a></li>
+									<li><a href="#">스페셜케어</a></li>
+									<li><a href="#">헤어/바디케어</a></li>
+									<li><a href="#">SET</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#"><span>금액대별</span></a>
+								<ul class="depth2">
+									<li><a href="#">3만원 이하</a></li>
+									<li><a href="#">3만원 이상 ~ 5만원 이하</a></li>
+									<li><a href="#">5만원 이상 ~ 10만원 이하</a></li>
+									<li><a href="#">10만원 이상 ~ 20만원 이하</a></li>
+									<li><a href="#">20만원 이상 ~ 30만원 이하</a></li>
+									<li><a href="#">30만원 이상</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="topmenu">
+					<ul>
+						<li><a href="/shop/member.html?type=login"><img src="http://reskin.img13.kr/common/skin1/images/style/gnbt-login-off.png" class="rollover" alt="로그인"></a></li>
+						<li><a href="/shop/idinfo.html"><img src="http://reskin.img13.kr/common/skin1/images/style/gnbt-join-off.png" class="rollover" alt="회원가입"></a></li>
+						<li><a href="/shop/member.html?type=mynewmain"><img src="http://reskin.img13.kr/common/skin1/images/style/gnbt-mypage-off.png" class="rollover" alt="마이페이지"></a></li>
+						<li><a href="/shop/basket.html"><img src="http://reskin.img13.kr/common/skin1/images/style/gnbt-cart-off.png" class="rollover" alt="장바구니"></a></li>
+						<li><a href="/shop/confirm_login.html?type=myorder"><img src="http://reskin.img13.kr/common/skin1/images/style/gnbt-order-off.png" class="rollover" alt="주문조회"></a></li>
+						<li><a href="/board/board.html?code=reskin_board36"><img src="http://reskin.img13.kr/common/skin1/images/style/gnbt-cscenter-off.png" class="rollover" alt="고객센터"></a></li>
+						<li><a href="http://www.reskin.biz" target="_blank"><img src="http://reskin.img13.kr/common/skin1/images/style/gnbt_english_off.png" class="rollover" alt="ENGLISH"></a></li>
+					</ul>
+				</div>
+			</div>
+		
+			<div id="gnb-area">
+				<h1><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/style/logo.png" alt="reskin logo"></a></h1>
+				<div id="gnb">
+					<ul>
+						<li class="item-1"><span><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/style/gnb_prd_item_off.png" class="rollover" alt="PRODUCT ITEM"></a></span></li>
+						<li class="item-2"><span><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/style/gnb_prd_line_off.png" class="rollover" alt="PRODUCT LINE"></a></span></li>
+						<li class="item-3"><span><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/style/gnb_skin_solution_off.png" class="rollover" alt="SKIN SOLUTION"></a></span></li>
+						<li class="item-4"><span><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/style/gnb_for_man_off.png" class="rollover" alt="FOR MAN"></a></span></li>
+						<li class="item-5"><span><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/style/gnb_vip_zone_off.png" class="rollover" alt="VIP ZONE"></a></span></li>
+					</ul>
+				</div>
+				<div id="review-event">
+					<ul>
+						<li><span><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/style/gnb-review-off.png" class="rollover" alt="REVIEW"></a></span></li>
+						<li><span><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/style/gnb-event-off.png" class="rollover" alt="EVENT"></a></span></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="container">content</div>
-	<div id="footer">footer</div>
+	<div id="content">
+		<div id="slider-wrap">
+			<div class="wrap">
+				<!-- 메인 비주얼 슬라이더 -->
+				<div class="flexslider">
+					<ul class="slides clfix">
+						<li><img src="common/image/main/main_rolling01.png" alt="스타들이 강력 추천하는 바로 그 선물!"></li>
+						<li><img src="common/image/main/main_rolling02.png" alt="스템셀 이매직 라인 리뉴얼 런칭기념 1+1 EVENT"></li>
+						<li><img src="common/image/main/main_rolling03.png" alt="KAKAO STORY 기막힌 후기 쓰기"></li>
+						<li><img src="common/image/main/main_rolling04.png" alt="유통기한 임박제품 50% 대박세일"></li>
+					</ul>
+				</div>
+				
+				<!-- 비쥬얼 영역 위 배너 -->
+				<div class="main-ban">
+					<ul>
+						<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/bnn/bnn_main_top_1.png" alt="TS LINE 여드름성 피부에 적합한 토탈 관리케어"></a></li>
+						<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/bnn/bnn_main_top_2.png" alt="EGF BOMBER 노벨상을 수상한 EGF 성분이 듬뿍"></a></li>
+						<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/bnn/bnn_main_top_3.png" alt="FACE CLEANSING 각질 &amp; 블랙헤드 &amp; 피지를 한꺼번에!"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+		(function($) {
+			$(document).ready(function(){
+				$('.flexslider').flexslider({
+					animation: "fade"
+				});
+			});
+		})(jQuery);
+		</script>
+
+		<div class="main-category wrap">
+			<ul class="clfix">
+				<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/product-item-1.gif" alt="클렌징"></a></li>
+				<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/product-item-2.gif" alt="스킨"></a></li>
+				<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/product-item-3.gif" alt="로션"></a></li>
+				<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/product-item-4.gif" alt="에센스"></a></li>
+				<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/product-item-5.gif" alt="크림"></a></li>
+				<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/product-item-6.gif" alt="아이크림"></a></li>
+				<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/product-item-7.gif" alt="스팟"></a></li>
+				<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/product-item-8.gif" alt="바디"></a></li>
+				<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/product-item-9.gif" alt="헤어"></a></li>
+				<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/product-item-10.gif" alt="악세서리"></a></li>
+			</ul>
+		</div>
+
+		<div class="main-event">
+			<div class="wrap">
+				<h2 class="blind">EVENT</h2>
+				<div class="event-box-1"><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/bnn/bnn_gift.jpg" alt="구매금액별 사은품"></a></div>
+				<div class="event-box-2"><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/bnn/bnn_main_anti.jpg" alt="2014 special event 안티링클 스네일 라인 런칭기념!"></a></div>
+				<div class="event-box-3"><a href="#"><img src="common/image/main/ban_event_3.jpg" alt=""></a></div>
+				<div class="event-box-4"><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/bnn/bnn_main_buy.jpg" alt="RESKIN EVENT 리스킨 재구매율 83% 적립금 1,000원 지급"></a></div>
+				<div class="event-box-5"><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/bnn/bnn_mini_1.jpg" alt="첫 구매 매니아 5,000원 쿠폰 증정 LUCKY CHANCE"></a></div>
+				<div class="event-box-6"><a href="#"><img src="common/image/main/ban_event_6.jpg" alt="RESKIN EVENT 랭키닷컴 대한민국 NO.1 방문객 월 280만"></a></div>
+			</div>
+		</div>
+
+		<div class="main-best">
+			<div class="wrap">
+				<h2><span class="blind">BEST SELLER</span></h2>
+				<ul class="clfix">
+					<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/best-seller_1.jpg" alt="RS 하이드라 훼이셜 크림"></a></li>
+					<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/best-seller_2.jpg" alt="RS 하이드라 겔 마스크(4매)"></a></li>
+					<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/best-seller_3.jpg" alt="브이랩 시스템 7 화이트닝 BB"></a></li>
+					<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/best-seller_4.jpg" alt="TS 스팟 릴리프"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer-wrap">
+		<div class="wrap">
+			<div class="footer-ban">
+				<ul class="clfix">
+					<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/ft-notice.gif" alt="NOTICE"></a></li>
+					<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/ft-faq.gif" alt="FAQ"></a></li>
+					<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/ft-membership.gif" alt="MEMBERSHIP"></a></li>
+					<li><a href="#"><img src="http://reskin.img13.kr/common/skin1/images/contents/ft-brandstory.gif" alt="BRAND STORY"></a></li>
+				</ul>
+			</div>
+			<div class="footer-sitemap">
+				<h2 class="blind">전체 사이트맵</h2>
+				<ul class="clfix">
+					<li class="community">
+						<h3><span class="blind">community</span></h3>
+						<ul>
+							<li><a href="#">포토 리뷰</a></li>
+							<li><a href="#">텍스트 리뷰</a></li>
+						</ul>
+					</li>
+					<li class="event">
+						<h3><span class="blind">event</span></h3>
+						<ul>
+							<li><a href="#">진행중인 이벤트</a></li>
+							<li><a href="#">종료된 이벤트</a></li>
+						</ul>
+					</li>
+					<li class="about">
+						<h3><span class="blind">about reskin</span></h3>
+						<ul>
+							<li><a href="#">리스킨 제품라인</a></li>
+							<li><a href="#">오프라인 매장안내</a></li>
+							<li><a href="#">3D Room</a></li>
+						</ul>
+					</li>
+					<li class="cs">
+						<h3><span class="blind">CS CENTER</span></h3>
+						<ul>
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">이용안내</a></li>
+							<li><a href="#">멤버쉽 안내</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</li>
+					<li class="myreskin">
+						<h3><span class="blind">MY RESKIN</span></h3>
+						<ul>
+							<li><a href="#">주문내역</a></li>
+							<li><a href="#">장바구니</a></li>
+							<li><a href="#">위시리스트</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-menu">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">이용가이드</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+					<li><a href="#">즐겨찾기추가</a></li>
+					<li><a href="#">쿠폰사용법</a></li>
+				</ul>
+				<div class="btn-top">
+					<a href="#"><img src="http://reskin.img13.kr/common/skin1/images/style/go-top.gif" alt="상위로 가기"></a>
+				</div>
+			</div>
+			<div class="footer-info">
+				<h1><img src="http://reskin.img13.kr/common/skin1/images/style/logo-footer.gif" alt="RESKIN"></h1>
+				<div class="rk">
+					<ul class="clfix">
+						<li class="first">사업자명 : (주)리크리홀딩컴퍼니</li>
+						<li>대표이사 : 장덕화</li>
+						<li>사업자등록번호 : 211-88-37556</li>
+						<li>통신판매업 신고번호 : 제2010-서울 강남-00056호</li>
+						<li class="first">사업장소재지 : 서울시 강남구 압구정로 421 리스킨타운</li>
+						<li>물류센터 : 경기도 광주시 오포읍 양벌리 98-2번지</li>
+						<li>대표전화 : 02-512-1444</li>
+						<li class="first">팩스 : 02-518-7209</li>
+						<li>개인정보보안책임자 : 서홍석</li>
+						<li>E-mail : help@reskin.co.kr</li>
+					</ul>
+					<p class="copy">Copyright 1999-2014 © reskin Corp. All rights reserved.</p>
+				</div>
+				<script type="text/javascript" src="common/js/footer_mark.js"></script>
+				
+				<div id="footer-mark" class="mark">
+					<div class="mark-mask">
+						<ul class="mark_moveSet">
+							<li>
+								<a href="http://reskin.img13.kr/certifi/iso_9001.html" target="_blank"><img src="http://reskin.img13.kr/common/skin1/images/contents/mark1.jpg" alt="ISO 9001 2008" /></a>
+								<a href="http://ibn1.kbstar.com/quics?page=A010563&cc=a002346:a047278&mHValue=da45adb4d0e2924f0ec9ebe38a00172e201002091609984" target="_blank"><img src="http://reskin.img13.kr/common/skin1/images/contents/mark4.jpg" alt="국민 에스트로 인증" /></a>
+								<a class="mark_last"><img src="http://reskin.img13.kr/common/skin1/images/contents/mark2.jpg" alt="우수 전자거래 사업자 인증서" /></a>
+							</li>
+							<li>
+								<a><img src="http://reskin.img13.kr/common/skin1/images/contents/mark3.jpg" alt="랭키닷컴" /></a>
+								<a class="mark_last" href="http://reskin.img13.kr/certifi/iso14001.html" target="_blank"><img src="http://reskin.img13.kr/common/skin1/images/contents/mark1.jpg" alt="다날" /></a>
+				                <a href="http://www.fiti.re.kr/" target="_blank"><img src="http://reskin.img13.kr/common/skin1/images/contents/mark6.jpg" alt="ISO 14001 2004" /></a>
+					    	</li>
+							<li>
+								<a href="http://www.ftc.go.kr/" target="_blank"><img src="http://reskin.img13.kr/common/skin1/images/contents/mark7.jpg" alt="공정거래위원회" /></a>
+								<a class="mark_last" href="http://www.mfds.go.kr/" target="_blank"><img src="http://reskin.img13.kr/common/skin1/images/contents/mark8.jpg" alt="식품의약품안전처" /></a>
+				                <a href="http://www.kcp.co.kr/" target="_blank"><img src="http://reskin.img13.kr/common/skin1/images/contents/mark10.jpg" alt="한국사이버결제" /></a>
+							</li>
+						</ul>
+					</div>
+					<a href="#" class="mark_prevBtn"><img src="http://reskin.img13.kr/common/skin1/images/style/arrow-prev.gif" alt=""/></a>
+					<a href="#" class="mark_nextBtn"><img src="http://reskin.img13.kr/common/skin1/images/style/arrow-next.gif" alt=""/></a>
+				</div>
+				<script type="text/javascript">
+					jQuery('#footer-mark').DB_slideStepMove({
+						motionDirection:'x',       //모션방향('x','y')			
+						moveDistance:232,          //이동거리(li기준)
+						moveSpeed:500,             //이동속도
+						autoRollingTime:5000       //자동롤링시간(밀리초)
+					});		
+				</script>
+			</div>
+		</div>
+	</div>
 </div>
 </body>
 </html>

@@ -3,7 +3,7 @@
 /*layout*/
 #wrapper {position:relative;width:100%;}
 #header {position:absolute;left:0;top:0;width:100%;height:118px;z-index:100;background:url('http://reskin.img13.kr/common/skin1/images/style/hdwrap.png') repeat-x 0 0;}
-#content, #footer {position:relative;}
+#content, #footer-wrap {position:relative;}
 .wrap {position:relative;width:1000px;margin:0 auto;}
 .wrap:after {display:block;content:'';clear:both;*zoom:1;}
 
@@ -81,19 +81,42 @@
 .main-best ul li a {display:block;height:300px;}
 
 /*footer*/
-#footer {border-top:1px solid #e8e8e8;}
+#footer-wrap {border-top:1px solid #e8e8e8;}
 .footer-ban ul li {float:left;overflow:hidden;}
 .footer-ban ul li a {display:block;height:80px;}
 .footer-sitemap {background-color:#1c1c1c;overflow:hidden;}
-.footer-sitemap > ul > li {float:left;padding:30px 0 30px 30px;width:170px;overflow:hidden;background:url('../image/common/bg_footer_sitemap.gif') repeat-y right center;}
-.footer-sitemap ul li h2 {padding:0;margin:0 0 6px 0;height:11px;overflow:hidden;}
-.footer-sitemap ul li.community h2 {background:url('http://reskin.img13.kr/common/skin1/images/contents/ft-sitemap4.gif') no-repeat;}
-.footer-sitemap ul li.event h2 {background:url('http://reskin.img13.kr/common/skin1/images/contents/ft-sitemap5.gif') no-repeat;}
-.footer-sitemap ul li.about h2 {background:url('http://reskin.img13.kr/common/skin1/images/contents/ft-sitemap6.gif') no-repeat;}
-.footer-sitemap ul li.cs h2 {background:url('http://reskin.img13.kr/common/skin1/images/contents/ft-sitemap7.gif') no-repeat;}
-.footer-sitemap ul li.myreskin h2 {background:url('http://reskin.img13.kr/common/skin1/images/contents/ft-sitemap8.gif') no-repeat;}
+.footer-sitemap h2 {padding:0;margin:0;}
+.footer-sitemap > ul > li {float:left;padding:30px 0 30px 30px;width:170px;min-height:100px;overflow:hidden;background:url('../image/common/bg_footer_sitemap.gif') repeat-y right center;}
+.footer-sitemap ul li h3 {padding:0;margin:0 0 6px 0;height:11px;overflow:hidden;}
+.footer-sitemap ul li.community h3 {background:url('http://reskin.img13.kr/common/skin1/images/contents/ft-sitemap4.gif') no-repeat;}
+.footer-sitemap ul li.event h3 {background:url('http://reskin.img13.kr/common/skin1/images/contents/ft-sitemap5.gif') no-repeat;}
+.footer-sitemap ul li.about h3 {background:url('http://reskin.img13.kr/common/skin1/images/contents/ft-sitemap6.gif') no-repeat;}
+.footer-sitemap ul li.cs h3 {background:url('http://reskin.img13.kr/common/skin1/images/contents/ft-sitemap7.gif') no-repeat;}
+.footer-sitemap ul li.myreskin h3 {background:url('http://reskin.img13.kr/common/skin1/images/contents/ft-sitemap8.gif') no-repeat;}
 .footer-sitemap ul li ul li {line-height:20px;}
 .footer-sitemap ul li ul li a {color:#616161;font-weight:700;}
+.footer-menu {position:relative;height:43px;background-color:#313131;}
+.footer-menu ul {display:inline-block;}
+.footer-menu ul li {float:left;padding-left:20px;line-height:43px;background:url('http://reskin.img13.kr/common/skin1/images/style/ft-nav-line.gif') no-repeat 10px center;}
+.footer-menu ul li:first-child {background:none;}
+.footer-menu ul li a {display:inline-block;color:#888;font-weight:700;}
+.footer-menu .btn-top {position:absolute;right:0;top:0;}
+.footer-menu .btn-top a {display:block;width:43px;height:43px;}
+.footer-info {position:relative;display:inline-block;width:100%;padding:36px 0 20px 0;}
+.footer-info h1 {float:left;margin-top:4px;}
+.footer-info .rk {float:left;width:630px;margin-left:40px;}
+.footer-info .rk ul {width:634px;}
+.footer-info .rk ul li {float:left;padding-left:16px;background:url('http://reskin.img13.kr/common/skin1/images/style/ft-nav-line.gif') no-repeat 8px 50%;line-height:1.4;white-space:nowrap;font-weight:700;font-size:11px;}
+.footer-info .rk ul li.first {padding-left:0;background:none;}
+.footer-info .rk p {margin:10px 0 0;line-height:100%;font-weight:700;}
+.mark {position:absolute;right:0;top:36px;width:230px;height:40px;}
+.mark .mark-mask {position:relative;width:230px;height:100%;overflow:hidden;}
+.mark .mark-mask ul {width:100%;}
+.mark .mark-mask ul li {width:100%;padding-left:36px;}
+.mark .mark-mask ul li a {display:inline-block;margin-right:15px;}
+.mark .mark_prevBtn {position:absolute;left:0;top:0;}
+.mark .mark_nextBtn {position:absolute;right:0;top:0;}
+
 
 /*공통*/
 .bg-none {background:none !important;}
