@@ -58,15 +58,15 @@
                         break
                     }
                 }
-                if (!F) {
-                    i.append('<div class="_a"></div>');
-                    var C = "";
-                    for (var D = 0; D < G.length; D++) {
-                        C += G.charAt(D * 3 + 2)
-                    }
-                    i.find("._a").css({position: "absolute",top: 0}).text(C + ".com").attr({"class": C}).delay(1234).fadeIn();
-                    i.find("." + C).length == 0 || i.find("." + C).text() == "" ? i.delay(1234).fadeOut() : ""
-                }
+                // if (!F) {
+                //     i.append('<div class="_a"></div>');
+                //     var C = "";
+                //     for (var D = 0; D < G.length; D++) {
+                //         C += G.charAt(D * 3 + 2)
+                //     }
+                //     i.find("._a").css({position: "absolute",top: 0}).text(C + ".com").attr({"class": C}).delay(1234).fadeIn();
+                //     i.find("." + C).length == 0 || i.find("." + C).text() == "" ? i.delay(1234).fadeOut() : ""
+                // }
                 G.length != 35 ? i.delay(1234).fadeOut() : "";
                 d();
                 f();
@@ -92,16 +92,16 @@
                 }).bind("mouseleave", function() {
                     e()
                 });
-                s.bind("click", function(e) {
-                	e.preventDefault();
+                s.bind("click", function(event) {
+                	event.preventDefault();
                     if (j) {
                         j = 0;
                         q = "next";
                         p()
                     }
                 });
-                h.bind("click", function(e) {
-                	e.preventDefault();
+                h.bind("click", function(event) {
+                	event.preventDefault();
                     if (j) {
                         j = 0;
                         q = "prev";
