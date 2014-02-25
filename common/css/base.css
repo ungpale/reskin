@@ -1,52 +1,62 @@
-@charset "utf-8";
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-/*@font-face {
-	font-family:'Nanum Gothic'; font-style:normal; font-weight:400;
-	src:url('../fonts/NanumGothic-Regular.eot');
-	src:local('NanumGothic'),
-		url('../fonts/NanumGothic-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/NanumGothic-Regular.woff') format('woff');
-}
-@font-face {
-	font-family:'Nanum Gothic'; font-style:normal; font-weight:700;
-	src:url('../fonts/NanumGothic-Bold.eot');
-	src:local('NanumGothic Bold'),
-		url('../fonts/NanumGothic-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/NanumGothic-Bold.woff') format('woff');
-}*/
 
-/*basic*/
-html, button, input, select, textarea {color:#666;font-size:12px;font-family:'Nanum Gothic', '맑은 고딕', '돋움', Dotum, sans-serif, Tahoma;}
-body {font-size:12px;font-family:'Nanum Gothic', '맑은 고딕', '돋움', Dotum, sans-serif, Tahoma;color:#666;letter-spacing: -1px;}
-::-moz-selection {background:#aaa;text-shadow:none;}
-::selection {background:#aaa;text-shadow:none;}
-hr {display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}
-img {vertical-align:middle;border:none;}
-fieldset {border: 0; margin: 0; padding: 0; }
-textarea {resize: vertical; }
-.chromeframe {margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0; }
-a {color:#494949;text-decoration: none}
-a:visited {color:#494949;text-decoration: none}
-a:hover {color:#494949;text-decoration: none}
-select {font-family:'Nanum Gothic', '맑은 고딕', '돋움', Dotum, sans-serif, Tahoma;font-size:12px;vertical-align:middle;}
-dd{margin:0;}
-label,input{vertical-align:middle;}
-ul,ol,li{list-style:none;padding:0;margin:0;}
-.clear{clear:both;content:"";display:block;padding:0;margin:0;width:0;height:0;line-height:0;font-size:0;}
-h3{margin-bottom:30px;}
-h4{margin-bottom:30px;}
-h5{margin-bottom:20px;}
-h6{margin-bottom:20px;font-family:'Nanum Gothic', '맑은 고딕', '돋움', Dotum, sans-serif, Tahoma;font-size:20px;font-weight:bold;}
-h7{margin-bottom:20px;font-family:'Nanum Gothic', '맑은 고딕', '돋움', Dotum, sans-serif, Tahoma;font-size:28px;font-weight:bold;}
-p{line-height:22px;}
-h4 + p{margin-bottom:20px;}
-h5 + p{margin-bottom:20px;}
+* {padding:0;margin:0;}
+html {width:100%;height:100%;overflow-x:hidden;}
+body{margin:0 auto;width:100%;font-size:12px;font-family:"Nanum Gothic", dotum,"����",sans-serif;color:#666;}
+body,div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,form,fieldset,input,table,tr,th,td{margin:0; padding:0}
+h1, h2, h3, h4, h5, h6 {margin:0; padding:0; font-weight:normal;}
+img {vertical-align:top;border:none;}
+caption, legend {display:none}
+input, select, label {vertical-align:middle;}
+ul, ol, dl, li {list-style:none;}
+fieldset {margin:0;border:none;}
+textarea {font-size:12px;line-height:18px;}
+button {border:none;padding:0;margin:0;background:none;vertical-align:middle;cursor:pointer;}
+a {color:#666;text-decoration:none;}
+a:hover, a:active, a:focus {text-decoration:underline;}
 
-table {border-collapse:collapse;border:0;border-spacing:0;empty-cells:show;width:100%;}
-td,th {border:0;}
+table {border-collapse:collapse; border:0; border-spacing:0; empty-cells:show; width:100%;}
+td,th {border:0; line-height:1.2em;}
+
+.blind {position:absolute;top:-9999px;width:0;height:0;overflow:hidden;margin:0;padding:0;visibility:hidden;font-size:0;line-height:0;}
 
 .clfix:after{content:".";display:block;clear:both;visibility:hidden;height:0}
 /*.clfix{display: inline-block}*/
 * html .clfix{height:1%}
 * {zoom:1;}
-.blind {position:abolute;left:0;top:0;overflow:hidden;visibility:hidden;width:0;height:0;text-indent:-9999px;z-index:-1;}
+
+/*skipnavigation*/
+#skipnavigation {position:absolute;z-index:10000;left:0;top:0;width:100%;}
+#skipnavigation a {display:block;width:1px;height:1px;margin-bottom:-1px;overflow:hidden;text-align:center;color:#fff;}
+#skipnavigation a:focus, .accessibility a:active {width:100%;height:auto;padding:5px 0;background-color:#CE292C}
+
+/*����*/
+.mt5 {margin-top:5px !important;}
+.mt10 {margin-top:10px !important;}
+.mt15 {margin-top:15px !important;}
+.mt20 {margin-top:20px !important;}
+.mt25 {margin-top:25px !important;}
+.mt30 {margin-top:30px !important;}
+.mt35 {margin-top:35px !important;}
+.mt40 {margin-top:40px !important;}
+.mt45 {margin-top:45px !important;}
+.mt50 {margin-top:50px !important;}
+.mb5 {margin-bottom:5px !important;}
+.mb10 {margin-bottom:10px !important;}
+.mb15 {margin-bottom:15px !important;}
+.mb20 {margin-bottom:20px !important;}
+.mb25 {margin-bottom:25px !important;}
+.mb30 {margin-bottom:30px !important;}
+.mb35 {margin-bottom:35px !important;}
+.mb40 {margin-bottom:40px !important;}
+.mb45 {margin-bottom:45px !important;}
+.mb50 {margin-bottom:50px !important;}
+
+.fl {float:left !important;}
+.fr {float:right !important;}
+
+.tal {text-align:left !important;}
+.tac {text-align:center !important;}
+.tar {text-align:right !important;}
+
+.inblock {display:inline-block !important;}
